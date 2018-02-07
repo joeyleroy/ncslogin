@@ -6,6 +6,8 @@ var bodyParser = require('body-parser');
 var env = require('dotenv').load();
 var exphbs = require('express-handlebars')
 
+var port = process.env.PORT || 3000;
+
 // For BodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -47,7 +49,14 @@ models.sequelize.sync().then(function() {
    console.log(err, "Something went wrong with the Database Update!")
 });
 
-app.listen(3000, function(err) {
+// app.listen(3000, function(err) {
+//     if(!err)
+//         console.log('Site is live!');
+//     else console.log(err)
+// });
+
+// Modify above code to include port variable. Commented out duplicate code for easy revert.
+app.listen(port, function(err) {
     if(!err)
         console.log('Site is live!');
     else console.log(err)
