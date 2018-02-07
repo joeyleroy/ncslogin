@@ -1,45 +1,45 @@
 {
     
-       "development": {
+    "development": {
+
+        "username": "root",
+
+        "password": "joey5639",
+
+        "database": "passport",
+
+        "host": "127.0.0.1",
+
+        "dialect": "mysql"
+
+    },
+
+    "test": {
+
+        "username": "",
+
+        "password": null,
+
+        "database": "",
+
+        "host": "",
+
+        "dialect": "mysql"
+
+    },
+
+    "production": {
+
+        "username": "",
+
+        "password": null,
+
+        "database": "",
+
+        "host": "127.0.0.1",
+
+        "dialect": "mysql"
+
+    }
     
-           "username": "root",
-    
-           "password": "joey5639",
-    
-           "database": "passport",
-    
-           "host": "127.0.0.1",
-    
-           "dialect": "mysql"
-    
-       },
-    
-       "test": {
-    
-           "username": "",
-    
-           "password": null,
-    
-           "database": "",
-    
-           "host": "",
-    
-           "dialect": "mysql"
-    
-       },
-    
-       "production": {
-    
-           "username": "",
-    
-           "password": null,
-    
-           "database": "",
-    
-           "host": "127.0.0.1",
-    
-           "dialect": "mysql"
-    
-       }
-    
-   }
+}
